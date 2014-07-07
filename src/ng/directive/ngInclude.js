@@ -7,6 +7,11 @@
  *
  * @description
  * Fetches, compiles and includes an external HTML fragment.
+ * 
+ * <div class="alert alert-warning">
+ * The value passed to ngInclude is evaluated as an expression. If you want to pass a
+ * literal path to a file, wrap it in single quotes: `<ANY ng-include="'path/to/file.html'"></ANY>`
+ * </div>
  *
  * By default, the template URL is restricted to the same domain and protocol as the
  * application document. This is done by calling {@link ng.$sce#getTrustedResourceUrl
